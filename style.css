@@ -33,6 +33,9 @@ div {
 div p {
 	margin: 20px;
 }
+img {
+	transition: all 0.3s ease;
+}
 p {
 	font-family: 'Droid Serif', serif;
 }
@@ -41,16 +44,23 @@ a {
 	color: black;
 	font-family: 'Sue Ellen Francisco', cursive;
 }
+a:hover {
+	color: #cc0000;
+}
+a:visited {
+	color: #600080;
+}
 .tab {
-	height: 40px;
+	width: 21%;
+	margin-right: 10px;
+	margin-left: 10px;
 	display: inline-flex;
 	justify-content: space-around;
-	align-content: center;
 	flex-wrap: nowrap;
 	flex-direction: row;
 }
 .tab a {
-	font-size: 17px;
+	font-size: 25px;
 	text-align: center;
 }
 .spec {
@@ -70,6 +80,12 @@ a {
 	flex-wrap: wrap;
 	text-align: left;
 }
+#new img {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
 #quote {
 	text-align: center;
 	font-size: 20px;
@@ -80,4 +96,9 @@ a {
 }
 #new p {
 	text-align: center;
+}
+#grow:hover {
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
